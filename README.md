@@ -25,8 +25,8 @@ A simple recipe page that is responsive.
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [ljmanayon/recipe-page](https://github.com/ljmanayon/recipe-page)
+- Live Site URL: [github.io/recipe-page](https://ljmanayon.github.io/recipe-page)
 
 ### Built with
 
