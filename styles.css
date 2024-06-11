@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Young Serif";
+  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+/* Styling starts below */
+html {
+  box-sizing: border-box;
+  font-family: "Outfit";
+  text-decoration-color: #e4ded8;
+}
+
+body {
+  background-color: #f3e6d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 1600px;
+  border-radius: 1rem;
+}
+.container header:not(:first-child),
+section {
+  margin: 0.2rem 2rem;
+}
+
+img {
+  margin: 20px auto;
+  width: 90%;
+  border-radius: 0.5rem;
+}
+
+.preparation-time {
+  line-height: 2rem;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #fff5fa;
+}
+
+.preparation-time li {
+  padding-left: 1rem;
+}
+
+.preparation-time ul li::marker {
+  color: #7b284f;
+}
+
+li::marker {
+  color: #854632;
+}
+
+.ingredients {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  line-height: 2rem;
+}
+
+.instructions {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.instructions li:nth-child(-n + 6) {
+  margin-bottom: 0.5rem;
+}
+
+.nutrition {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #5f574e;
+}
+
+ul,
+ol {
+  margin-left: 2rem;
+  color: #5f574e;
+}
+h1 {
+  color: #302d2c;
+}
+h1,
+h2 {
+  font-family: "Young Serif";
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: #854632;
+}
+
+h3 {
+  color: #7b284f;
+}
+p {
+  color: #5f574e;
+}
+
+.nutrition-count {
+  width: 100%;
+  margin-top: 0.5rem;
+  line-height: 3rem;
+  padding-left: 2rem;
+  border-spacing: 0;
+  border-collapse: collapse;
+  text-indent: 2rem;
+}
+
+.nutrition-count tr:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+hr {
+  width: 90%;
+  margin: 0 auto;
+  border: none;
+  border-top: 1px solid #333;
+  opacity: 0.1;
+}
+
+.color-text {
+  color: #854632;
+}
+
+footer {
+  bottom: 0;
+  flex-direction: row;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 375px;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  img {
+    border-radius: 0;
+    width: 100%;
+    margin-top: 0;
+  }
+}
